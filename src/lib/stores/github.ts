@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import gherror from './gherror';
 import type { GHState, GHRepo } from '$lib/interfaces';
+import { current_component } from 'svelte/internal';
 
 // Initial State
 const initState: GHState = {
@@ -53,11 +54,15 @@ const fetchRepos = async (username: string) => {
         }
     }
     
-
 }
+
+const setIndex = (index: number) => update(current => {
+    return {...current, selectedIndex: index}
+})
 
 // Exports
 export default {
     fetchRepos,
+    setIndex,
     subscribe
 }

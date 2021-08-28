@@ -1,8 +1,8 @@
 export interface GHRepo {
     name: string;
     desc: string;
-    language?: string;
-    license?: string;
+    language: string;
+    license: string;
     url: string;
 }
 

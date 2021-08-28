@@ -1,6 +1,7 @@
 <script lang="ts">
     import GitHubForm from '$lib/github/GitHubForm.svelte';
     import GitHubList from '$lib/github/GitHubList.svelte';
+    import GitHubDetail from '$lib/github/GitHubDetail.svelte';
 </script>
 
 <style>
@@ -18,7 +19,7 @@
     <div class="ui two column divided grid gh-grid">
         <div class="row">
             <GitHubList />
-            <div class="column">asdf</div>
+            <GitHubDetail />
         </div>
     </div>
 </div>
