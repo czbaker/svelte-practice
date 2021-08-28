@@ -1,5 +1,5 @@
 <script lang="ts">
-    import counter from '../../stores/counter'
+    import counter from '$lib/stores/counter'
 
     const handleInc = (amount: number) => {
         counter.increase(amount);
